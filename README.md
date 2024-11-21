@@ -1,4 +1,4 @@
-# SelfSokat
+# SelfSplat
 
 ## Installation
 
@@ -22,7 +22,7 @@ python setup.py build_ext --inplace
 
 ## Acquiring Pre-trained Checkpoints and Datasets
 
-You can find pre-trained checkpoints and datasets [here](https://huggingface.co/anonymous-submit/submission/tree/main). Put `CroCo_V2_ViTLarge_BaseDecoder.pth` in `checkpoints` directory. Unzip data subset in `dataset`.
+You can find pre-trained checkpoints and datasets [here](https://huggingface.co/anonymous159/selfsplat/tree/main). Put `CroCo_V2_ViTLarge_BaseDecoder.pth` in `checkpoints` directory. Unzip data subset in `dataset`.
 
 ## Running the Code
 
