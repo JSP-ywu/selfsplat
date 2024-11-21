@@ -1,0 +1,35 @@
+# @package _global_
+
+defaults:
+  - override /dataset: re10k
+  - override /model/encoder: self
+  - override /loss: [repro, mse] # [mse, lpips, repro]
+
+wandb:
+  name: re10k
+  tags: [re10k, 256x256]
+
+dataset:
+  image_shape: [256, 256]
+  roots: [dataset/re10k_subset]
+  near: 1.0
+  far: 100.
+  make_baseline_1: false
+  augment: false
+
+
+data_loader:
+  train:
+    batch_size: 12
+
+trainer:
+  max_steps: 200_001
+  val_check_interval: 0.5
+
+loss:
+  repro:
+    weight: 0.6
+    geo_weight: 0.2
+
+  mse:
+    weight: 0.4

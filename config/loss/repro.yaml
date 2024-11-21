@@ -1,0 +1,3 @@
+repro:
+  weight: 0.35
+  geo_weight: 0.1

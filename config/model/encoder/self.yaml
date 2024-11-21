@@ -1,0 +1,28 @@
+name: self
+
+opacity_mapping:
+  initial: 0.0
+  final: 0.0
+  warm_up: 1
+
+num_surfaces: 1
+
+gaussians_per_pixel: 1
+
+d_feature: 128
+
+gaussian_adapter:
+  gaussian_scale_min: 0.5
+  gaussian_scale_max: 15.0
+  sh_degree: 1
+
+downscale_factor: 4
+shim_patch_size: 4
+
+croco_backbone:
+  ckpt_path: checkpoints/CroCo_V2_ViTLarge_BaseDecoder.pth
+  img_size: [256, 256]
+  adapt: true
+
+using_matching_net: true
+using_depth_refine: true
