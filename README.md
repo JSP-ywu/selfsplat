@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">DepthSplat: Pose-Free and 3D Prior-Free Generalizable 3D Gaussian Splatting</h1>
+  <h1 align="center">SelfSplat: Pose-Free and 3D Prior-Free Generalizable 3D Gaussian Splatting</h1>
   <p align="center">
     <a href="https://github.com/Gynjn">Gyeongjin Kang</a>
     ·
@@ -9,7 +9,7 @@
     ·
     <a href="https://github.com/stnamjef">Seungtae Nam</a>
     ·
-    <a href="https://github.com/Gynjn/selfsplat">Hyeonsoo Im</a>
+    <a href="https://github.com/Gynjn/selfsplat">Hyeonsoo Im</a> <br>
     ·
     <a href="https://github.com/Gynjn/selfsplat">Shin sangheon</a>
     ·
