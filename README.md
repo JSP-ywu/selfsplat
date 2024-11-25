@@ -57,7 +57,7 @@ Our Code uses the same training datasets as pixelSplat. Below we quote pixelSpla
 
 ### DL3DV
 
-For DL3DV dataset we follow can check out the [DepthSplat](https://github.com/cvg/depthsplat/blob/main/DATASETS.md), it provides the detailed instruction on preparing DL3DV dataset. We only used 3K and 4K subset in training.
+For DL3DV dataset we follow the [DepthSplat](https://github.com/cvg/depthsplat/blob/main/DATASETS.md), it provides the detailed instruction on preparing DL3DV dataset. We only used 3K and 4K subset in training.
 
 ## Running the Code
 
