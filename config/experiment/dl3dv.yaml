@@ -32,7 +32,7 @@ model:
 
 data_loader:
   train:
-    batch_size: 12
+    batch_size: 6
 
 trainer:
   max_steps: 200_001
