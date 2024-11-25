@@ -43,7 +43,7 @@ python setup.py build_ext --inplace
 
 ## Acquiring Pre-trained Checkpoints and Datasets
 
-You can find pre-trained checkpoints [here](https://huggingface.co/lelady/SelfSplat/tree/main). 
+You can find pre-trained checkpoints [here](https://huggingface.co/lelady/SelfSplat/tree/main), and put then ub `pretrained` directory
 
 For CroCo pretrained model, download from [here](https://github.com/naver/croco). Put `CroCo_V2_ViTLarge_BaseDecoder.pth` in `checkpoints` directory.
 
