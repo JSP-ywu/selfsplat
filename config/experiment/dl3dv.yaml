@@ -35,7 +35,7 @@ data_loader:
     batch_size: 6
 
 trainer:
-  max_steps: 200_001
+  max_steps: 50_001
   val_check_interval: 0.5
 
 loss:
