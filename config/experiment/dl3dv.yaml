@@ -1,0 +1,47 @@
+# @package _global_
+
+defaults:
+  - override /dataset: re10k
+  - override /model/encoder: self
+  - override /loss: [repro, mse] # [mse, lpips, repro]
+
+wandb:
+  name: dl3dv
+  tags: [dl3dv, 256x448]
+
+dataset:
+  image_shape: [256, 448]
+  roots: [dataset/dl3dv]
+  near: 1.0
+  far: 100.
+  make_baseline_1: false
+  augment: false
+  view_sampler:
+    min_distance_between_context_views: 10
+    max_distance_between_context_views: 10
+    min_distance_to_context_views: 1
+    warm_up_steps: 50_000
+    initial_min_distance_between_context_views: 2
+    initial_max_distance_between_context_views: 2
+    num_target_views: 1
+
+model:
+  encoder:
+    croco_backbone:
+      img_size: [256, 448]  
+
+data_loader:
+  train:
+    batch_size: 12
+
+trainer:
+  max_steps: 200_001
+  val_check_interval: 0.5
+
+loss:
+  repro:
+    weight: 0.6
+    geo_weight: 0.2
+
+  mse:
+    weight: 0.4

@@ -1,8 +1,29 @@
-# SelfSplat
+<p align="center">
+  <h1 align="center">DepthSplat: Pose-Free and 3D Prior-Free Generalizable 3D Gaussian Splatting</h1>
+  <p align="center">
+    <a href="https://github.com/Gynjn">Gyeongjin Kang</a>
+    ·
+    <a href="https://github.com/Yoo-jisang">Jisang Yoo</a>
+    ·
+    <a href="https://github.com/Kanadae">Jihyeon Park</a>
+    ·
+    <a href="https://github.com/stnamjef">Seungtae Nam</a>
+    ·
+    <a href="https://github.com/Gynjn/selfsplat">Hyeonsoo Im</a>
+    ·
+    <a href="https://github.com/Gynjn/selfsplat">Shin sangheon</a>
+    ·
+    <a href="https://kuaicv.com/professor/?theme=pub/antoniau0026hide_banners=true">Sangpil Kim</a>
+    ·
+    <a href="https://silverbottlep.github.io/">Eunbyung Park</a>    
+  </p>
+  <h3 align="center"><a href="https://github.com/Gynjn/selfsplat">Paper</a> | <a href="https://gynjn.github.io/selfsplat/">Project Page</a> </h3>
+  <div align="center"></div>
+</p>
 
 ## Installation
 
-To get started, create a virtual environment using Python 3.10+:
+To get started, create a virtual environment using Python 3.10:
 
 ```bash
 conda create -n selfsplat python=3.10 -y
@@ -22,7 +43,21 @@ python setup.py build_ext --inplace
 
 ## Acquiring Pre-trained Checkpoints and Datasets
 
-You can find pre-trained checkpoints and datasets [here](https://huggingface.co/anonymous159/selfsplat/tree/main). Put `CroCo_V2_ViTLarge_BaseDecoder.pth` in `checkpoints` directory. Unzip data subset in `dataset`.
+You can find pre-trained checkpoints [here](https://huggingface.co/lelady/SelfSplat/tree/main). 
+
+For CroCo pretrained model, download from [here](https://github.com/naver/croco). Put `CroCo_V2_ViTLarge_BaseDecoder.pth` in `checkpoints` directory.
+
+### RealEstate10K and ACID
+
+Our Code uses the same training datasets as pixelSplat. Below we quote pixelSplat's [detailed instructions](https://github.com/dcharatan/pixelsplat?tab=readme-ov-file#acquiring-datasets) on getting datasets.
+
+> pixelSplat was trained using versions of the RealEstate10k and ACID datasets that were split into ~100 MB chunks for use on server cluster file systems. Small subsets of the Real Estate 10k and ACID datasets in this format can be found [here](https://drive.google.com/drive/folders/1joiezNCyQK2BvWMnfwHJpm2V77c7iYGe?usp=sharing). To use them, simply unzip them into a newly created `datasets` folder in the project root directory.
+
+> If you would like to convert downloaded versions of the Real Estate 10k and ACID datasets to our format, you can use the [scripts here](https://github.com/dcharatan/real_estate_10k_tools). Reach out to us (pixelSplat) if you want the full versions of our processed datasets, which are about 500 GB and 160 GB for Real Estate 10k and ACID respectively.
+
+### DL3DV
+
+For DL3DV dataset we follow can check out the [DepthSplat](https://github.com/cvg/depthsplat/blob/main/DATASETS.md), it provides the detailed instruction on preparing DL3DV dataset. We only used 3K and 4K subset in training.
 
 ## Running the Code
 
@@ -52,8 +87,17 @@ python3 -m src.main +experiment=re10k mode=test checkpointing.load=pretrained/re
 
 # ACID
 python3 -m src.main +experiment=acid mode=test checkpointing.load=pretrained/acid.ckpt
+
+# DL3DV
+python3 -m src.main +experiment=dl3dv mode=test checkpointing.load=pretrained/dl3dv.ckpt
 ```
+
+
 
 ## Camera Conventions
 
 Our extrinsics are OpenCV-style camera-to-world matrices. This means that +Z is the camera look vector, +X is the camera right vector, and -Y is the camera up vector. Our intrinsics are normalized, meaning that the first row is divided by image width, and the second row is divided by image height.
+
+## Acknowledgements
+
+This project is built on top of several outstanding repositories: [pixelSplat](https://github.com/dcharatan/pixelsplat), [MVSplat](https://github.com/donydchen/mvsplat), [DepthSplat](https://github.com/cvg/depthsplat), [CoPoNeRF](https://github.com/cvlab-kaist/CoPoNeRF), [UniMatch](https://github.com/autonomousvision/unimatch), and [CroCo](https://github.com/naver/croco). We thank the original authors for opensourcing their excellent work.
