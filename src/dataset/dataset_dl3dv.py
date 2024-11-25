@@ -156,15 +156,15 @@ class DatasetDL3DV(IterableDataset):
                     continue
 
                 # Skip the example if the images don't have the right shape.
-                # context_image_invalid = context_images.shape[1:] != (3, 270, 480)
-                # target_image_invalid = target_images.shape[1:] != (3, 270, 480)
-                # if context_image_invalid or target_image_invalid:
-                #     print(
-                #         f"Skipped bad example {example['key']}. Context shape was "
-                #         f"{context_images.shape} and target shape was "
-                #         f"{target_images.shape}."
-                #     )
-                #     continue
+                context_image_invalid = context_images.shape[1:] != (3, 270, 480)
+                target_image_invalid = target_images.shape[1:] != (3, 270, 480)
+                if context_image_invalid or target_image_invalid:
+                    print(
+                        f"Skipped bad example {example['key']}. Context shape was "
+                        f"{context_images.shape} and target shape was "
+                        f"{target_images.shape}."
+                    )
+                    continue
                 
                 # check the extrinsics
                 if any(torch.isnan(torch.det(extrinsics[context_indices][:, :3, :3]))):
