@@ -100,4 +100,4 @@ Our extrinsics are OpenCV-style camera-to-world matrices. This means that +Z is 
 
 ## Acknowledgements
 
-This project is built on top of several outstanding repositories: [pixelSplat](https://github.com/dcharatan/pixelsplat), [MVSplat](https://github.com/donydchen/mvsplat), [DepthSplat](https://github.com/cvg/depthsplat), [CoPoNeRF](https://github.com/cvlab-kaist/CoPoNeRF), [UniMatch](https://github.com/autonomousvision/unimatch), and [CroCo](https://github.com/naver/croco). We thank the original authors for opensourcing their excellent work.
+This project is built on top of several outstanding repositories: [pixelSplat](https://github.com/dcharatan/pixelsplat), [MVSplat](https://github.com/donydchen/mvsplat), [DepthSplat](https://github.com/cvg/depthsplat), [CoPoNeRF](https://github.com/cvlab-kaist/CoPoNeRF), [CroCo](https://github.com/naver/croco), [UniMatch](https://github.com/autonomousvision/unimatch), and [gsplat](https://github.com/nerfstudio-project/gsplat). We thank the original authors for opensourcing their excellent work.
