@@ -31,6 +31,10 @@
   <b style="color:red;">TL;DR:</b> We present SelfSplat, enabling 3D reconstruction from unposed images without any 3D priors.
 </p>
 
+<p align="center">
+  Supplementary materials will be released in a few days.
+</p>
+
 ## Installation
 
 To get started, create a virtual environment using Python 3.10:
@@ -102,11 +106,12 @@ python3 -m src.main +experiment=acid mode=test checkpointing.load=pretrained/aci
 python3 -m src.main +experiment=dl3dv mode=test checkpointing.load=pretrained/dl3dv.ckpt
 ```
 
-
-
 ## Camera Conventions
 
 Our extrinsics are OpenCV-style camera-to-world matrices. This means that +Z is the camera look vector, +X is the camera right vector, and -Y is the camera up vector. Our intrinsics are normalized, meaning that the first row is divided by image width, and the second row is divided by image height.
+
+## Contact
+Contact [Gyeongjin Kang](ggggjin99@gmail.com) if you have any further questions.
 
 ## Citation
 
