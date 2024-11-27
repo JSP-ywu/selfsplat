@@ -11,7 +11,7 @@
     ·
     <a href="https://github.com/Gynjn/selfsplat">Hyeonsoo Im</a> <br>
     ·
-    <a href="https://github.com/Gynjn/selfsplat">Shin sangheon</a>
+    <a href="https://github.com/Gynjn/selfsplat">Sangheon Shin</a>
     ·
     <a href="https://kuaicv.com/professor/?theme=pub/antoniau0026hide_banners=true">Sangpil Kim</a>
     ·
