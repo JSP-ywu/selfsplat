@@ -17,7 +17,7 @@
     ·
     <a href="https://silverbottlep.github.io/">Eunbyung Park</a>    
   </p>
-  <h3 align="center"><a href="https://github.com/Gynjn/selfsplat">Paper</a> | <a href="https://gynjn.github.io/selfsplat/">Project Page</a> </h3>
+  <h3 align="center"><a href="https://arxiv.org/abs/2411.17190">Paper</a> | <a href="https://gynjn.github.io/selfsplat/">Project Page</a> </h3>
   <div align="center"></div>
 </p>
 
@@ -111,11 +111,14 @@ Our extrinsics are OpenCV-style camera-to-world matrices. This means that +Z is 
 ## Citation
 
 ```
-@article{kang2024codecnerf,
-  title={CodecNeRF: Toward Fast Encoding and Decoding, Compact, and High-quality Novel-view Synthesis},
-  author={Kang, Gyeongjin and Lee, Younggeun and Park, Eunbyung},
-  journal={arXiv preprint arXiv:2404.04913},
-  year={2024}
+@misc{kang2024selfsplatposefree3dpriorfree,
+      title={SelfSplat: Pose-Free and 3D Prior-Free Generalizable 3D Gaussian Splatting}, 
+      author={Gyeongjin Kang and Jisang Yoo and Jihyeon Park and Seungtae Nam and Hyeonsoo Im and Shin sangheon and Sangpil Kim and Eunbyung Park},
+      year={2024},
+      eprint={2411.17190},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.17190}, 
 }
 ```
 
