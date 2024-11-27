@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <b style="color:red;">TL;DR:</b> We present SelfSplat, enabling 3D reconstruction from unposed images without any 3D priors.
+<strong>TL;DR: We present SelfSplat, enabling 3D reconstruction from unposed images without any 3D priors.</strong>
 </p>
 
 <p align="center">
