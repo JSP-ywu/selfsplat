@@ -25,7 +25,7 @@
   <a href="">
     <img src="./assets/teaser.jpg" alt="Logo" width="100%">
   </a>
-  <span style="color: red;">TL;DR:</span> We present SelfSplat, enabling 3D reconstruction from unposed images without any 3D priors
+  <span style="color:red;">TL;DR:</span> We present SelfSplat, enabling 3D reconstruction from unposed images without any 3D priors
 </p>
 
 ## Installation
