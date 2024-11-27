@@ -21,6 +21,13 @@
   <div align="center"></div>
 </p>
 
+<p align="center">
+  <a href="">
+    <img src="./assets/teaser.jpg" alt="Logo" width="100%">
+  </a>
+  <span style="color: red;">TL;DR:</span> We present SelfSplat, enabling 3D reconstruction from unposed images without any 3D priors
+</p>
+
 ## Installation
 
 To get started, create a virtual environment using Python 3.10:
