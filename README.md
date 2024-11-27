@@ -98,6 +98,17 @@ python3 -m src.main +experiment=dl3dv mode=test checkpointing.load=pretrained/dl
 
 Our extrinsics are OpenCV-style camera-to-world matrices. This means that +Z is the camera look vector, +X is the camera right vector, and -Y is the camera up vector. Our intrinsics are normalized, meaning that the first row is divided by image width, and the second row is divided by image height.
 
+## Citation
+
+```
+@article{kang2024codecnerf,
+  title={CodecNeRF: Toward Fast Encoding and Decoding, Compact, and High-quality Novel-view Synthesis},
+  author={Kang, Gyeongjin and Lee, Younggeun and Park, Eunbyung},
+  journal={arXiv preprint arXiv:2404.04913},
+  year={2024}
+}
+```
+
 ## Acknowledgements
 
 This project is built on top of several outstanding repositories: [pixelSplat](https://github.com/dcharatan/pixelsplat), [MVSplat](https://github.com/donydchen/mvsplat), [DepthSplat](https://github.com/cvg/depthsplat), [CoPoNeRF](https://github.com/cvlab-kaist/CoPoNeRF), [CroCo](https://github.com/naver/croco), [UniMatch](https://github.com/autonomousvision/unimatch), and [gsplat](https://github.com/nerfstudio-project/gsplat). We thank the original authors for opensourcing their excellent work.
