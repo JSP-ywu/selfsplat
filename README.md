@@ -111,7 +111,7 @@ python3 -m src.main +experiment=dl3dv mode=test checkpointing.load=pretrained/dl
 Our extrinsics are OpenCV-style camera-to-world matrices. This means that +Z is the camera look vector, +X is the camera right vector, and -Y is the camera up vector. Our intrinsics are normalized, meaning that the first row is divided by image width, and the second row is divided by image height.
 
 ## Contact
-Contact [Gyeongjin Kang](ggggjin99@gmail.com) if you have any further questions.
+Contact [Gyeongjin Kang](mailto:ggggjin99@gmail.com) if you have any further questions.
 
 ## Citation
 
