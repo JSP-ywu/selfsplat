@@ -129,4 +129,4 @@ Contact [Gyeongjin Kang](mailto:ggggjin99@gmail.com) if you have any further que
 
 ## Acknowledgements
 
-This project is built on top of several outstanding repositories: [pixelSplat](https://github.com/dcharatan/pixelsplat), [MVSplat](https://github.com/donydchen/mvsplat), [DepthSplat](https://github.com/cvg/depthsplat), [CoPoNeRF](https://github.com/cvlab-kaist/CoPoNeRF), [CroCo](https://github.com/naver/croco), [UniMatch](https://github.com/autonomousvision/unimatch), and [gsplat](https://github.com/nerfstudio-project/gsplat). We thank the original authors for opensourcing their excellent work.
+This project is built on top of several outstanding repositories: [pixelSplat](https://github.com/dcharatan/pixelsplat), [MVSplat](https://github.com/donydchen/mvsplat), [DepthSplat](https://github.com/cvg/depthsplat), [PF3plat](https://github.com/cvlab-kaist/PF3plat), [CoPoNeRF](https://github.com/cvlab-kaist/CoPoNeRF), [CroCo](https://github.com/naver/croco), [UniMatch](https://github.com/autonomousvision/unimatch), and [gsplat](https://github.com/nerfstudio-project/gsplat). We thank the original authors for opensourcing their excellent work.
